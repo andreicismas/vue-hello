@@ -16,9 +16,13 @@
         <input v-model="cognome" placeholder="Nognome utente">
 
         <h1 :class="myClass">Come ti chiami:  {{nome}} {{cognome}}</h1>
+        <div>
+           <img  :class="my_dog" src="" alt="">
+           <button @click="call_me">Try me!</button>
+        </div>    
 
         <button @click="myfunction">Chenge color!</button>
-        <button @click="myfunction">Reset colors!</button>
+        <button @click="reset_func">Reset ALL!</button>
 
     </main>
 
