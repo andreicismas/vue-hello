@@ -12,12 +12,28 @@
 const app = new Vue(
     {
         el: '#contenitore',
+
         data:
         {
             nome: "",
             cognome: "",
-        }
-       
+            myClass: "",
+        },
+        methods: {
+            myfunction: function () {
+                if(!this.myClass){
+                    this.myClass = " text_red"
+                    this.myClass = " text_underline"
+                }else{
+                    this.myClass = ""
+
+                }
+
+
+                console.log(`ciao belli `);
+            },
+
+        },
 
     }
 )

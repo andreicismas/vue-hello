@@ -15,7 +15,11 @@
         <input v-model="nome" placeholder="Nome utente">
         <input v-model="cognome" placeholder="Nognome utente">
 
-        <h1 :class="mieClassi">Come ti chiami:  {{nome}} {{cognome}}</h1>
+        <h1 :class="myClass">Come ti chiami:  {{nome}} {{cognome}}</h1>
+
+        <button @click="myfunction">Chenge color!</button>
+        <button @click="myfunction">Reset colors!</button>
+
     </main>
 
     <script src="script.js"></script>
