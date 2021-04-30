@@ -17,10 +17,10 @@
 
         <h1 :class="myClass">Come ti chiami:  {{nome}} {{cognome}}</h1>
         <div>
-           <img  :class="my_dog" src="" alt="">
-           <button @click="call_me">Try me!</button>
+           <img class="activ_img" :src="my_dog" alt="">
         </div>    
-
+        
+        <button @click="call_me">Try me!</button>
         <button @click="myfunction">Chenge color!</button>
         <button @click="reset_func">Reset ALL!</button>
 

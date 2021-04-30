@@ -18,14 +18,11 @@ const app = new Vue(
             nome: "",
             cognome: "",
             myClass: "",
-            my_dog:""       
+            my_dog: ""
         },
         methods: {
             call_me: function () {
-                if(!this.my_dog){
-
-                    this.my_dog = "back_ground"
-                }
+                this.my_dog = "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"
             },
             myfunction: function () {
                 if (!this.myClass) {
@@ -45,7 +42,7 @@ const app = new Vue(
                 this.nome = ""
                 this.cognome = ""
                 this.myClass = ""
-
+                this.my_dog = ""
             }
 
 
